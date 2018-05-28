@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fytics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <style>
+    .content_wrappper 
+    {
+
+    }
+    .heading h1 {	
+        height: 28px;
+        width: 100%;
+        color: #2A3542;	
+        font-family: "Gill Sans";
+        font-size: 24px;
+        line-height: 28px;	
+        margin: 14px 0 18px;
+        display: inline-block;
+    }
+      #pricing-table 
+      {
+        margin-left: -15px;  
+    }
+    #pricing-table .plan {
+        min-height: 399px;
+        width: calc(20% - 15px);
+        border: 1px solid #D9D9D9;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        float: left;
+        position: relative;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    /* --------------- */	
+    #pricing-table h3 {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 15px;
+        text-align: center;
+        margin: 0;
+    }
+    /* --------------- */
+
+    #pricing-table ul {
+        margin: 30px 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #pricing-table li {
+        border-top: none;
+        padding: 7px 0;
+        font-family: "Gill SansL";	
+        text-align: center;
+        color: #9FACB3;	
+        font-size: 14px;
+        line-height: 16px;	
+    }
+     #pricing-table li b{
+         font-size: 36px;
+         color: #2E3234;
+         line-height: 41px;
+         display: block;
+         width: 100%;
+    }
+    /* --------------- */
+
+    #pricing-table .groupplane {
+        color: #3C4144;
+        font-family: "Gill Sans";
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+    }   
+      .combination-group 
+      {
+        margin-left: -15px;
+      }
+        .combination {
+            width: calc(20% - 15px);
+            margin-left: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #D9D9D9;
+            border-radius: 3px;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+            padding: 15px;
+            float: left;
+            position: relative;
+        }
+        .combinationPlan h1 {
+            width: 100%;
+            color: #3C4144;
+            font-family: "Gill Sans";
+            font-size: 18px;
+            line-height: 21px;
+            margin: 0;
+            padding: 0;
+
+        }
+          .line 
+          {
+              display: block;
+              width: 100%;
+              padding: 10px 0;
+          }
+          .lineHR  {	
+                width: 56.52px;
+                height: 1px;
+                display: block;
+                border-radius: 4px;
+                border: 1px solid #BDB9B9;
+          }
+          .border-cls img
+          {
+            float: right;
+          }
+          .loc {
+            float: left;
+            width: 30px;
+            display: inline-block;
+        }
+        .dotmnu {
+            float: right;
+        }
+        .statusToo {
+            display: inline-block;
+            margin-top: 9px;
+        }
+
+      .combination-content 
+      {
+        display: block;
+        float: left;
+        width: 100%;
+      }
+      .combination-content ul.listtag {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        float: left;
+      }
+     .combination-content ul li {
+       color: #9FACB3;
+        font-family: "Gill Sans";
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 3px;
+    }
+      .priceCombination {
+            list-style: none;
+            text-align: center;
+            float: right;
+            list-style: none;
+            padding-left: 0;
+            padding-right: 19px;
+      }
+       .priceCombination li
+      {
+        padding-bottom: 4px;
+      }
+      .priceCombination li b
+      {
+        color: #C62522;
+        font-family: "Gill Sans";
+        font-size: 36px;
+        line-height: 41px;
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+      .overviewSelect  {
+        height: 36px;
+        width: 167px;
+        border: 1px solid #D9D9D9;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+        color: #3C4144;	
+        font-family: "Gill Sans";
+        font-size: 18px;
+        line-height: 21px;
+          float: right;
+    }
+      @media screen and (max-width:1024px)
+      {
+        .combination , #pricing-table .plan  {
+            width: calc(25% - 15px);
+          }
+      }
+       @media screen and (max-width:800px)
+      {
+        .combination , #pricing-table .plan  {
+            width: calc(28% - 15px);
+          }
+      }
+       @media screen and (max-width:500px)
+      {
+        .combination , #pricing-table .plan  {
+            width: calc(30% - 15px);
+          }
+      }
+       @media screen and (max-width:360px)
+      {
+        .combination , #pricing-table .plan  {
+            width: calc(100% - 15px);
+          }
+      }
+ </style>
+</head>
+<body>
+    <section class="content_wrappper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 heading text-center">
+                    <h1>
+                        Staff Overview
+                         <select class="overviewSelect">
+                            <option>Best first</option>
+                            <option></option>
+                        </select>
+                    </h1>
+                   
+                </div>
+                <div class="col-sm-12">                  
+                     <div id="pricing-table" class="clear">
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3>
+                                <img src="images/Bitmap.png" class="loc">
+                                <div class="statusToo"><img src="images/Group.png"></div>
+                                <img src="images/dotted.png" class="dotmnu">
+                            </h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3><img src="images/Group.png"></h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                         <div class="plan">
+                            <h3>
+                                <img src="images/Bitmap.png" class="loc">
+                                <div class="statusToo"><img src="images/Group.png"></div>
+                                <img src="images/dotted.png" class="dotmnu">
+                            </h3>
+                            <a class="groupplane" href="javascript:void(0);">
+                                Melissa Tossenburg
+                            </a>         
+                            <ul>
+                                <li>Wasted<b>$49</b></li>
+                                <li>Total Hours<b>18</b></li>
+                                <li>Waste Pr. Hour<b>$2.7</b></li>
+                            </ul> 
+                        </div>
+                     </div>
+                </div>
+                <div class="col-sm-12 heading text-center">
+                    <h1>Staff Combinations</h1>
+                </div>
+                <div class="col-sm-12"> 
+                    <div class="combination-group"> 
+                       <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                       <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                       <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                       <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                        <div class="combination clear">
+                         <div class="combinationPlan">
+                             <h1>Combination 1
+                                 <span class="border-cls">
+                                     <img src="images/dotted.png">
+                                 </span>
+                             </h1>
+                         </div>
+                         <div class="line">
+                            <span class="lineHR"></span>
+                         </div>
+                         <div class="combination-content">
+                            <ul class="listtag">
+                                <li>Marcus Burns</li>
+                                <li>Josephine Drake</li>
+                                <li>Francisco Campbell</li>
+                             </ul>
+                             <ul class="priceCombination">
+                                <li><b>$49</b>Wasted</li>
+                                <li><b style="color: #53C34A;">18</b>Total Hours</li>
+                            </ul>
+                         </div>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('gillsans-webfont.eot');
+    src: url('gillsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gillsans-webfont.woff2') format('woff2'),
+         url('gillsans-webfont.woff') format('woff'),
+         url('gillsans-webfont.ttf') format('truetype'),
+         url('gillsans-webfont.svg#gillsansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Gill SansL';
+    src: url('gillsans_light.eot?#iefix') format('embedded-opentype'),
+         url(gillsans_light.woff) format('woff'),
+         url(gillsans_light.ttf) format('truetype'),
+         url('gillsans_light.svg#GillSans-Light') format('svg');
+    font-weight:400;
+    font-style:normal
+}
